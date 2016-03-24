@@ -22,4 +22,10 @@ The target hidden service needs to listen to port 443, and have HTTPS service th
 
 Techical details
 ================
-First it is maybe easier to do a static mapping to a few onion addresses as a proof of concept. Making proxy services that represent a certain address in some port in the localhost. After that the dlundquist code needs to be forked most probably. The current code could also do name lookups'n shit. That would then require doing an internal network plus a name server for the initial proof of concept. 
+First it is maybe easier to do a static mapping to a few onion addresses as a proof of concept. Making proxy services that represent a certain address in some port in the localhost. After that the dlundquist code needs to be forked most probably. The current code could also do name lookups'n shit. That would then require doing an internal network plus a name server for the initial proof of concept.
+
+Drawbacks
+=========
+This is not transparent for onion sites.
+The proxy can still do man in the middle if it wants to.
+Some others? 
